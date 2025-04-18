@@ -1,0 +1,133 @@
+* { /*Estilos generales*/
+    margin: 0;    /*Elimina el margen*/
+    padding: 0;    /*Elimina el padding*/
+    box-sizing: border-box;    /*Elimina el padding*/
+    font-family: Arial, Helvetica, sans-serif;    /*Fuentes a usar, Arial GOD*/
+    color: #333;    /*Color del texto*/
+    transition: all 0.3s ease;    /*Animación de transición*/
+    scroll-behavior: smooth;    /*Animación de transición*/
+    background-color: #fff;    /*Color de fondo*/
+    font-size: 16px;    /*Tamaño del texto*/
+    line-height: 1.5;    /*Espacio entre líneas*/
+    text-align: left;    /*Alinea el texto a la izquierda*/
+}
+
+a:hover{    /*Estilo para el link cuando se pase el cursor sobre el*/
+    color: #8b2f2f;    /*Color del texto*/
+}
+
+nav{    /*Estilo para el header*/
+    background-color: #fefefe;    /*Color de fondo*/
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /*Sombras*/
+    padding: 10px 0;    /*Agrega un margen de 10px*/
+    position: sticky; /*Sticky >>>>> fixed*/
+    top: 0;    /*Posición vertical*/
+    z-index: 10;    /*Posición eje z*/
+}
+
+.navbar{    /*Estilo para el header*/
+    display: flex;    /*Utiliza flexbox*/
+    justify-content: space-between; /* alinea horizontalmente, hace que se separen los nav-left yel nav-rigth */
+    align-items: center; /* alinea verticalmente*/
+    padding: 10px 40px;    /*Agrega un margen de 10px*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    /*Sombra*/
+    top: 0;    /*Posición vertical*/
+    z-index: 999; /* para que se vea sobre el contenido */    /*Posición eje z*/
+}
+
+.nav-right {    /*Estilo para el botón de login*/
+    display: flex;    /*Utiliza flexbox*/
+    gap: 15px;    /*Agrega un margen de 15px*/
+}
+
+.nav-right .btn {    /*Estilo para el botón de login*/
+    padding: 8px 16px;    /*Agrega un margen de 8px*/
+    background-color: #993d3d;    /*Color de fondo*/
+    color: white;    /*Color del texto*/
+    border-radius: 6px;    /*Esquinas redondeadas*/
+    text-decoration: none;    /*Sin decoración*/
+    font-weight: bold;    /*Estilo de fuente*/
+    transition: background-color 0.3s;    /*Animación de transición*/
+}
+
+.nav-right .btn:hover {    /*Estilo para el botón de login cuando se pase el cursor sobre el*/
+    background-color: #b36868;    /*Color de fondo*/
+}   
+
+#menu{    /*Estilo para el menu*/
+    list-style: none;    /*Elimina el estilo de lista, mejor dicho carga el estilo por defecto*/
+    display: flex;    /*Utiliza flexbox*/
+    justify-content: center;        /*Se centran las secciones*/
+    gap: 20px;    /*Agrega un margen de 20px*/
+    padding: 0;    /*Elimina el padding*/
+    margin: 0;    /*Elimina el margen*/
+}
+
+#menu li{    /*Estilo para el menu*/
+    transition: background-color 0.3s ease, transform 0.2s ease;    /*Animación de transición*/
+    border-radius: 10px;    /*Esquinas redondeadas*/
+}   
+
+#menu li a{    /*Estilo para el menu*/  
+    display: block;    /*Se muestra como bloque*/
+    padding: 10px 20px;    /*Agrega un margen de 10px*/
+    border-radius: 10px;    /*Esquinas redondeadas*/
+    text-decoration: none;    /*Sin decoración*/
+    font-weight: bold;        /*Estilo de fuente*/
+    font-size: 1.2em;    /*Tamaño del texto en menu*/
+}
+
+#menu li a:hover {    /*Estilo para el menu cuando se pase el cursor sobre el*/
+    background-color: #e4e4e4;    /*Color de fondo*/
+    color: #8b2f2f;    /*Color del texto*/
+    transform: scale(1.05);    /*Transforma el objeto, aumenta su tamaño*/
+}  
+
+footer{    /*Estilo para el footer*/
+    background-color: #ececec;    /*Color de fondo*/
+    padding: 0 20px;    /*Agrega un margen de 20px*/
+    text-align: center;    /*Alinea el texto en el centro*/
+    font-size: 1.2em;    /*Tamaño del texto en footer*/
+    margin-top: 20px;    /*Agrega un margen de 20px arriba*/
+    border-top: 1px solid #c2c2c2;    /*Linea*/
+    position: sticky; /* por que no fixed? porque si pongo fixed tapa el contenido de mi main, por eso puse sticky*/ 
+    bottom: 0;    /*Posición vertical*/
+    width: 100%;    /*Tamaño del contenedor*/
+    height: 100px;    /*Tamaño del contenedor*/
+    display: flex;    /*Utiliza flexbox*/
+    align-items: center;    /*Alinea verticalmente*/
+    margin-top: 20px;    /*Agrega un margen de 20px arriba*/
+    justify-content: center;    /*Se centran las secciones*/
+    box-shadow: 0px 0px 100px 1px rgba(0, 0, 0, 0.3);    /*Sombra*/
+}
+
+footer .footer-content {    /*Estilo para el contenido del footer*/
+    display: flex;    /*Utiliza flexbox*/
+    flex-direction: row;    /*Se dispone de las secciones en filas*/
+    justify-content: center;    /*Se centran las secciones*/
+    align-items: center;    /*Alinea verticalmente*/
+    padding: 0 clamp(10px, 2vw, 40px);    /*Agrega un margen de 10px*/
+    background-color: #f1f1f100;    /*Color de fondo*/
+}
+
+footer .footer-content p{    /*Estilo para el contenido del footer*/
+    color: #3f3f3f;    /*Color del texto*/
+    font-size: 1.2rem;    /*Tamaño del texto en footer*/
+    font-weight: bold;    /*Estilo de fuente*/
+    text-decoration: none;    /*Sin decoración*/
+    text-align: center;    /*Alinea el texto en el centro*/
+    margin: 0;    /*Elimina el margen*/
+    padding: 0 clamp(10px, 2vw, 30px);    /*Agrega un margen de 10px*/
+    list-style: none;    /*Elimina el estilo de lista, mejor dicho carga el estilo por defecto*/
+    transition: all 0.3s ease;    /*Animación de transición*/
+    scroll-behavior: smooth;    /*Animación de transición*/
+    background-color: #ffffff00;    /*Color de fondo*/
+}
+
+footer a{    /*Estilo para el contenido del footer*/
+    color: #3f3f3f;    /*Color del texto*/
+    font-size: 1.2rem;    /*Tamaño del texto en footer*/
+    font-weight: bold;    /*Estilo de fuente*/
+    border-radius: 7px;    /*Esquinas redondeadas*/
+    background-color: #f0f0f000;    /*Color de fondo*/
+}

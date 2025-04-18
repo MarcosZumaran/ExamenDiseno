@@ -1,0 +1,136 @@
+h2{
+    text-align: center; /*Alinea el texto en el centro*/
+    margin-bottom: 20px;    /*Agrega un margen de 20px abajo*/
+    font-size: 2em; /*Tamaño del texto en h2*/
+}
+
+footer{ /*Estilo para el footer*/
+    position: fixed; /*¿Por que no sticky? El por qué ya lo respondí en otro comentario*/
+}
+
+
+.login-section{ /*Estilo para la sección de login*/
+    display: flex; /*Utiliza flexbox*/
+    flex-direction: column;     /*Se dispone de las secciones en columnas*/
+    justify-content: center;    /*Se centran las secciones*/
+    align-items: center;        /*Se centran las secciones*/
+    padding: 20px;              /*Agrega un margen de 20px*/
+}
+
+.login-section form{    /*Estilo para el formulario de login*/
+    display: flex;        /*Utiliza flexbox*/
+    flex-direction: column;     /*Se dispone de las secciones en columnas*/
+    justify-content: center;    /*Se centran las secciones*/
+    align-items: center;        /*Se centran las secciones*/
+    gap: 20px;            /*Agrega un margen de 20px*/
+}
+
+.login-section form label{    /*Estilo para el label de login*/
+    display: block;        /*Se muestra como bloque*/
+    font-size: 1.2em;      /*Tamaño del texto en label*/
+}
+
+.login-section form input{    /*Estilo para el input de login*/
+    padding: 10px;         /*Agrega un margen de 10px*/
+    border-radius: 5px;    /*Esquinas redondeadas*/
+    border: 1px solid #ccc;    /*Borde*/
+    font-size: 1.2em;      /*Tamaño del texto en input*/
+    margin-bottom: 10px;    /*Agrega un margen de 10px abajo*/
+}
+
+.login-section form button{    /*Estilo para el botón de login*/
+    padding: 10px 20px;     /*Agrega un margen de 10px*/
+    border-radius: 5px;    /*Esquinas redondeadas*/
+    background-color: #993d3d;    /*Color de fondo*/
+    color: white;          /*Color del texto*/
+    border: none;          /*Sin borde*/
+    font-size: 1.2em;      /*Tamaño del texto en button*/
+    cursor: pointer;       /*Cursor del mouse, icono del dedito*/
+    transition: background-color 0.3s;    /*Animación de transición*/
+}
+
+.login-section form button:hover{    /*Estilo para el botón de login cuando se pase el cursor sobre el*/
+    background-color: #b36868;    /*Color de fondo*/
+}
+
+.login-section form button:active{    /*Estilo para el botón de login cuando se presiona el botón*/
+    background-color: #8b2f2f;    /*Color de fondo*/
+}
+
+.login-section form a{    /*Estilo para el link de login*/
+    text-decoration: none;    /*Sin decoración*/
+    color: #993d3d;    /*Color del texto*/
+    font-size: 1.2em;      /*Tamaño del texto en link*/
+    transition: color 0.3s;    /*Animación de transición*/
+}
+
+.login-section form a:hover{    /*Estilo para el link de login cuando se pase el cursor sobre el*/
+    color: #b36868;    /*Color del texto*/
+}
+
+.login-section form a:active{    /*Estilo para el link de login cuando se presiona el botón*/
+    color: #8b2f2f;    /*Color del texto*/
+}
+
+.signup-section{    /*Estilo para la sección de signup*/
+    display: flex;        /*Utiliza flexbox*/
+    flex-direction: column;     /*Se dispone de las secciones en columnas*/
+    justify-content: center;    /*Se centran las secciones*/
+    align-items: center;        /*Se centran las secciones*/
+    padding: 20px;              /*Agrega un margen de 20px*/
+}
+
+.signup-section form{    /*Estilo para el formulario de signup*/
+    display: flex;        /*Utiliza flexbox*/
+    flex-direction: column;     /*Se dispone de las secciones en columnas*/
+    justify-content: center;    /*Se centran las secciones*/
+    align-items: center;        /*Se centran las secciones*/
+    gap: 20px;            /*Agrega un margen de 20px*/
+}   
+
+.signup-section form label{     /*Estilo para el label de signup*/
+    display: block;        /*Se muestra como bloque*/
+    font-size: 1.2em;      /*Tamaño del texto en label*/
+}
+
+.signup-section form input{    /*Estilo para el input de signup*/
+    padding: 10px;         /*Agrega un margen de 10px*/
+    border-radius: 5px;    /*Esquinas redondeadas*/
+    border: 1px solid #ccc;    /*Borde*/
+    font-size: 1.2em;      /*Tamaño del texto en input*/
+    margin-bottom: 10px;    /*Agrega un margen de 10px abajo*/
+}
+
+.signup-section form button{    /*Estilo para el botón de signup*/
+    padding: 10px 20px;     /*Agrega un margen de 10px*/
+    border-radius: 5px;    /*Esquinas redondeadas*/
+    background-color: #993d3d;    /*Color de fondo*/
+    color: white;          /*Color del texto*/
+    border: none;          /*Sin borde*/
+    font-size: 1.2em;      /*Tamaño del texto en button*/
+    cursor: pointer;       /*Cursor del mouse, icono del dedito*/
+    transition: background-color 0.3s;    /*Animación de transición*/
+}
+
+.signup-section form button:hover{    /*Estilo para el botón de signup cuando se pase el cursor sobre el*/
+    background-color: #b36868;    /*Color de fondo*/
+}
+
+.signup-section form button:active{    /*Estilo para el botón de signup cuando se presiona el botón*/
+    background-color: #8b2f2f;    /*Color de fondo*/
+}
+
+.signup-section form a{    /*Estilo para el link de signup*/
+    text-decoration: none;    /*Sin decoración*/
+    color: #993d3d;    /*Color del texto*/
+    font-size: 1.2em;      /*Tamaño del texto en link*/
+    transition: color 0.3s;    /*Animación de transición*/
+}   
+
+.signup-section form a:hover{    /*Estilo para el link de signup cuando se pase el cursor sobre el*/
+    color: #b36868;    /*Color del texto*/
+}
+
+.signup-section form a:active{    /*Estilo para el link de signup cuando se presiona el botón*/
+    color: #8b2f2f;    /*Color del texto*/
+}

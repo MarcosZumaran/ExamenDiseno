@@ -1,0 +1,131 @@
+ul, ol {
+    list-style: initial; /* Elimina el estilo de lista, mejor dicho carga el estilo por defecto */
+    margin-left: 1.5rem; /* Agrega un margen de 1.5rem a la izquierda */
+}
+
+main{
+    width: 100%;
+    margin: 0 auto; /* Centra el contenido */
+    display: flex; /* Utiliza flexbox */
+}
+
+main section{
+    margin: 0 auto; /* Centra el contenido */
+    height: auto; /* mantiene la proporción, asi no se estira xDDDD */
+}
+
+main section article{
+    padding: 20px; /* Agrega un margen de 20px */
+}
+
+main .receta-principal img {
+    width: 75%; /* 75% del ancho de la página */
+    height: auto; /* mantiene la proporción, asi no se estira xDDDD */
+    max-width: 100%; /* evita que se pase del contenedor */
+    border-radius: 8px; /* esquinas redondeadas */
+    display: block; /* quita espacio debajo de la imagen */
+}
+
+main section article h2{
+    font-size: 2em; /*Tamaño del texto en h2*/
+}
+
+main section article h3{
+    font-size: 1.5em; /*Tamaño del texto en h3*/
+}
+
+.mas-recetas {
+    width: 25%; /* 25% del ancho de la página */
+    padding: 20px; /* Agrega un margen de 20px */
+    background-color: #f9f9f9; /* Fondo suave */
+    margin-top: 40px; /* Agrega un margen de 40px arriba */
+    text-align: center; /* Alinea el texto en el centro */
+    width: 25%; /* 25% del ancho de la página */
+    margin-left: auto; /* Centra el bloque a la derecha */
+    margin-right: auto; /* Centra el bloque a la derecha */
+  }
+  
+  .mas-recetas h2 {
+    font-size: 2em; /* Tamaño del texto en h2 */
+    color: #333;
+    margin-bottom: 20px; /* Agrega un margen de 20px abajo */
+  }
+  
+  /* Estilo para cada artículo dentro de "Más recetas" */
+  .receta-extra {
+    background-color: #fff;
+    border-radius: 8px; /* esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin: 20px; /* Agrega un margen de 20px */
+    padding: 20px; /* Agrega un margen de 20px */
+    transition: transform 0.3s ease-in-out; /* Animación de transición */
+    text-align: center; /* Alinea el texto en el centro */
+  }
+  
+  .receta-extra:hover {
+    transform: scale(1.05); /* Efecto de hover */
+  }
+  
+  .receta-extra h3 {
+    font-size: 1.5em; /* Tamaño del texto en h3 */
+    color: #444; 
+    margin-bottom: 10px; /* Agrega un margen de 10px abajo */
+  }
+  
+  .receta-extra p {
+    font-size: 1.2em; /* Tamaño del texto en p */
+    color: #777; 
+    margin-bottom: 20px; /* Agrega un margen de 20px abajo */
+  }
+  
+  .receta-extra img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* mantiene la proporción, asi no se estira xDDDD */
+    border-radius: 5px; /* esquinas redondeadas */
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) { /*Si se detecta que el navegador es un dispositivo móvil se ejecuta lo siguiente:*/
+    /* Se dispone de las secciones en pantallas pequeñas */
+    main {
+        flex-direction: column;  /* Se dispone de las secciones en pantallas pequeñas */
+        align-items: center;  /* Se centran las secciones en pantallas pequeñas */
+        gap: 10px;  /* Espacio entre las secciones */
+    }
+
+    /* La sección principal ocupa todo el ancho */
+    section.principal {
+        flex: 1;  /* Se asegura de que ocupe todo el ancho en pantallas pequeñas */
+    }
+
+    /* La sección "Más recetas" ocupa todo el ancho */
+    .mas-recetas {
+        flex: 1;  /* Se asegura de que ocupe todo el ancho en pantallas pequeñas */
+        width: 100%;  /* Se asegura de que ocupe todo el ancho en pantallas pequeñas */
+    }
+
+    /* Oculta los subtítulos (las etiquetas p) en pantallas pequeñas */
+    .receta-extra p {
+        display: none; 
+    }
+}
+
+
+
+#ingredientes{
+    list-style: initial; /*Elimina el estilo de lista, mejor dicho carga el estilo por defecto*/
+    margin-top: 20px;
+}
+
+#ingredientes li{
+    margin: 10px 0;
+}
+
+#instrucciones{
+    list-style: numeric; /*Carga el estilo de lista numérico*/
+    margin-top: 20px;
+}
+
+#instrucciones li{
+    margin: 20px 0; /*Agrega un margen de 20px arriba y abajo*/
+}

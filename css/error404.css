@@ -1,0 +1,27 @@
+*{    /*Estilos generales*/
+    text-align: center;    /*Alinea el texto en el centro*/
+}
+
+footer{    /*Estilo para el footer*/
+    position: fixed; /*¿Por que no sticky? porque si pongo sticky el footer no se va hacia abajo, continua debajo de los p*/
+}
+
+body{    /*Estilo para el body*/
+    background-color: #f2f2f2;    /*Color de fondo*/
+    font-size: 16px;    /*Tamaño del texto*/
+    line-height: 1.5;    /*Espacio entre líneas*/
+    text-align: center;     /*Alinea el texto en el centro*/
+}   
+
+img{    /*Estilo para el imagen*/
+    margin-bottom: 20px;    /*Agrega un margen de 20px abajo*/
+}
+
+h1{    /*Estilo para el h1*/
+    font-size: 3em;    /*Tamaño del texto en h1*/
+}
+
+p{    /*Estilo para el p*/
+    margin: 20px 0;    /*Agrega un margen de 20px arriba y abajo*/
+}
+
